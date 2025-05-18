@@ -1,0 +1,35 @@
+.button{
+    width:35%;
+        
+    &-item{
+        display: flex;
+        gap:10px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--border-element);
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background: linear-gradient(0deg,rgba(188, 151, 240, 1) 0%, rgba(159, 74, 224, 1) 100%);
+        padding: 3px;
+
+        & h2{
+            margin:0;
+            color:var(--background-element);
+        }
+
+        & i{
+            color:var(--background-element);
+        }
+    }
+
+    &-text{
+        text-align: center;
+        margin:0;
+        font-size: 12px;
+        border: 1px solid var(--border-element);
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+        padding: 5px;
+    }
+}
+    

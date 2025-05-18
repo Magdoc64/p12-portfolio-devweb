@@ -1,0 +1,27 @@
+.detail-project {
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 4px var(--border-element);
+}
+.detail-project img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 75%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.detail-project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+.detail-project-text-title {
+  display: flex;
+}
+.detail-project-text-technic {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,49 @@
+.modal-project {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  min-height: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.modal-project-image {
+  width: 95%;
+  margin: 0 auto;
+}
+.modal-project-image img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-project-text {
+  position: absolute;
+  left: 0;
+  width: 95%;
+  top: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+.modal-project-text-title {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.modal-project-text-description {
+  width: 100%;
+}
+.modal-project-text-description h4 {
+  margin: 8px 0;
+}
+.modal-project-text-description p {
+  margin-bottom: 10px;
+}
+.modal-project-text-description span {
+  margin-right: 5px;
+}
+.modal-project-text-description a {
+  text-decoration: inherit;
+  color: black;
+  cursor: pointer;
+}/*# sourceMappingURL=modalProject.css.map */
