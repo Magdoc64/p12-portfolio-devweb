@@ -4,6 +4,7 @@ import categories from '../data/categories.js'
 import projects from '../data/project.js'
 import trombineOrdi from '../assets/trombineOrdi.webp'
 import trombineSalut from '../assets/trombineSalut.webp'
+import trombineContact from '../assets/trombineContact.webp'
 import Qualities from '../components/qualities/Qualities.jsx'
 import Trainings from '../components/trainings/Trainings.jsx'
 import Projects from '../components/projects/Projects.jsx'
@@ -77,46 +78,50 @@ const Home = () => {
       </section>
       <section id='contactme' className='contact'>
         <h2 className='contact-title'>Me contacter</h2>
-        <form className='contact-form'>
-          <div className='contact-form-name'>
-            <div className='contact-form-name-lastname'>
-              <label htmlFor='lastName'>Nom</label>
-              <input type='text' id='lastName' name='lastName' required/>
+        <div className='containerContact'>
+          <div className='containerForm'>
+            <form className='contact-form'>
+              <div className='contact-form-name'>
+                <div className='contact-form-name-lastname'>
+                  <label htmlFor='lastName'>Nom</label>
+                  <input type='text' id='lastName' name='lastName' required/>
+                </div>
+                <div className='contact-form-name-firstname'>
+                  <label htmlFor='firstName'>Prénom</label>
+                  <input type='text' id='firstName' name='firstName'/>
+                </div>
+              </div>
+              <div className='contact-form-contact'>
+                <div className='contact-form-contact-email'>
+                  <label htmlFor='email'>Email</label>
+                  <input type='email' id='email' name='email' required/>
+                </div>
+                <div className='contact-form-contact-tel'>
+                  <label htmlFor='tel'>Téléphone</label>
+                  <input type='tel' id='tel' name='tel'/>
+                </div>
+              </div>
+              <div className='contact-form-objet'>
+                <label htmlFor='object'>Objet</label>
+                <input type='text' id='object' name='object'/>
+              </div>
+              <div className='contact-form-message'>
+                <label htmlFor='message'>Message</label>
+                <textarea id='message' name='message'></textarea>
+              </div>
+              <p className='contact-form-info'>Champs obligatoires</p>
+            </form>
+            <button className='contact-button'>Envoyer</button>
+          </div>
+          <div className='contact-details'>
+            <div className='contact-details-name'>
+              <p>Magali Civadier</p>
+              <p><i className="fa-solid fa-phone"></i> 06.61.55.95.01</p>
+              <p><i className="fa-solid fa-envelope"></i> magali.civadier@icloud.com</p>
+              <p><i className="fa-solid fa-house"></i>64000 Pau</p>
             </div>
-            <div className='contact-form-name-firstname'>
-              <label htmlFor='firstName'>Prénom</label>
-              <input type='text' id='firstName' name='firstName'/>
-            </div>
+            <img src={trombineContact} alt="magali avec un signe de main montrant un téléphone"/>
           </div>
-          <div className='contact-form-contact'>
-            <div className='contact-form-contact-email'>
-              <label htmlFor='email'>Email</label>
-              <input type='email' id='email' name='email' required/>
-            </div>
-            <div className='contact-form-contact-tel'>
-              <label htmlFor='tel'>Téléphone</label>
-              <input type='tel' id='tel' name='tel'/>
-            </div>
-          </div>
-          <div className='contact-form-objet'>
-            <label htmlFor='object'>Objet</label>
-            <input type='text' id='object' name='object'/>
-          </div>
-          <div className='contact-form-message'>
-            <label htmlFor='message'>Message</label>
-            <textarea id='message' name='message'></textarea>
-          </div>
-          <p className='contact-form-info'>Champs obligatoires</p>
-        </form>
-        <button className='contact-button'>Envoyer</button>
-        <div className='contact-details'>
-          <div className='contact-details-name'>
-            <p>Magali Civadier</p>
-            <p><i className="fa-solid fa-phone"></i> 06.61.55.95.01</p>
-            <p><i className="fa-solid fa-envelope"></i> magali.civadier@icloud.com</p>
-            <p><i className="fa-solid fa-house"></i>64000 Pau</p>
-          </div>
-          <img src='../src/assets/trombineContact.webp'/>
         </div>
       </section>
     </main>

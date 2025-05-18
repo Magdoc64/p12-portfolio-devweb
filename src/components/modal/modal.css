@@ -10,6 +10,11 @@
   border: 1px solid var(--border-element);
   border-radius: 15px;
 }
+@media (min-width: 760px) {
+  .modal {
+    top: 10%;
+  }
+}
 .modal-content {
   position: relative;
   overflow: hidden;

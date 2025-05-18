@@ -10,6 +10,9 @@
     border: 1px solid var(--border-element);
     border-radius: 15px;
 
+    @media(min-width:760px){
+        top:10%
+    }
     &-content{
         position: relative;
         overflow: hidden;

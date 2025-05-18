@@ -2,7 +2,7 @@
     overflow: hidden;
     width: 100%;
     position: relative;
-    min-height: 500px;
+    min-height: 550px;
     margin-top: 30px;
     margin-bottom: 30px;
 
@@ -27,6 +27,11 @@
         align-items: center;
         margin:0 5px;
 
+        @media(min-width:760px){
+            top:40%;
+            left:2%;
+        }
+
       &-title{
         margin: 10px 0;
         font-size: 18px;
@@ -35,17 +40,16 @@
       &-description {
         width: 100%;
         & h4{
-            margin: 8px 0;
+            margin: 10px 0;
         }
         
         & p{
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         & span{
             margin-right: 5px;
         }
         & a{
-            text-decoration: inherit;
             color: black;
             cursor: pointer;
         }

@@ -104,6 +104,7 @@ header {
 @media (min-width: 760px) {
   .showing-title-name {
     align-items: center;
+    margin-right: 60px;
   }
 }
 .showing-title-name-me {
@@ -153,7 +154,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 5px;
+  padding: 20px 5px;
   background-color: var(--background-element);
 }
 .aboutme-title {
@@ -162,10 +163,17 @@ header {
 .aboutme-description {
   display: flex;
   gap: 10px;
-  margin: 10px 0;
+  margin: 10px auto;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .aboutme-description {
+    width: 80%;
+  }
 }
 .aboutme-description img {
   width: 30%;
+  max-width: 219px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -179,6 +187,11 @@ header {
   gap: 15px;
   margin: 15px 0;
 }
+@media (min-width: 1024px) {
+  .aboutme-quality {
+    width: 70%;
+  }
+}
 
 .training {
   display: flex;
@@ -186,7 +199,7 @@ header {
   justify-content: center;
   background: #EEAECA;
   background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(170, 113, 235) 100%);
-  padding: 10px 5px;
+  padding: 20px 5px;
 }
 .training-title {
   display: flex;
@@ -202,18 +215,20 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: var(--background-element);
+  padding: 20px 5px;
 }
 .project-title {
   display: flex;
   margin: 5px 0;
 }
 .project-categories {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin: 5px 0;
+  margin: 30px 0;
 }
 .project-categories-items {
   padding: 10px 5px;
@@ -226,6 +241,11 @@ header {
   font-weight: 700;
   transition: all 600ms ease-in-out;
 }
+@media (min-width: 760px) {
+  .project-categories-items {
+    width: 200px;
+  }
+}
 .project-categories-items:hover, .project-categories :active {
   cursor: pointer;
   background: var(--background-actif);
@@ -235,7 +255,43 @@ header {
   grid-template-columns: 1fr;
   width: 80%;
   grid-row-gap: 20px;
-  margin: 20px;
+  margin: 40px;
+}
+@media (min-width: 760px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    width: 90%;
+  }
+}
+
+.containerContact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 760px) {
+  .containerContact {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.containerForm {
+  width: 90%;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 760px) {
+  .containerForm {
+    width: 50%;
+  }
 }
 
 .contact {
@@ -244,7 +300,8 @@ header {
   align-items: center;
   background: #EEAECA;
   background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(170, 113, 235) 100%);
-  padding: 20px 0;
+  padding: 20px 5px;
+  width: 100%;
 }
 .contact-title {
   display: flex;
@@ -253,8 +310,8 @@ header {
 .contact-form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 90%;
+  gap: 10px;
+  width: 100%;
 }
 .contact-form input {
   height: 25px;
@@ -270,7 +327,6 @@ header {
 .contact-form-name {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
 }
 .contact-form-name-lastname {
   display: flex;
@@ -285,7 +341,6 @@ header {
 .contact-form-contact {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
 }
 .contact-form-contact-email {
   display: flex;
@@ -300,14 +355,12 @@ header {
 .contact-form-objet {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
   color: #50018a;
   font-weight: 700;
 }
 .contact-form-message {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
   color: #50018a;
   font-weight: 700;
 }
@@ -342,13 +395,31 @@ header {
   gap: 50px;
   margin: 0 15px;
 }
+@media (min-width: 760px) {
+  .contact-details {
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin: 0;
+  }
+}
 .contact-details img {
   width: 30%;
+}
+@media (min-width: 760px) {
+  .contact-details img {
+    width: 50%;
+  }
 }
 .contact-details-name {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media (min-width: 760px) {
+  .contact-details-name {
+    align-items: flex-start;
+    margin-top: 30px;
+  }
 }
 .contact-details-name p {
   margin: 5px 0;
@@ -366,6 +437,7 @@ footer {
 }
 
 .footer-text {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   gap: 10px;
