@@ -2,6 +2,10 @@
     height: 200px;
     border-radius: 15px;
     box-shadow: 5px 10px 4px var(--border-element);
+
+    & :hover{
+        cursor:pointer;
+    }
     & img{
         object-fit: cover;
         width: 100%;

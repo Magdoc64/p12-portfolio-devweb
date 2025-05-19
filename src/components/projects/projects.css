@@ -3,6 +3,9 @@
   border-radius: 15px;
   box-shadow: 5px 10px 4px var(--border-element);
 }
+.detail-project :hover {
+  cursor: pointer;
+}
 .detail-project img {
   -o-object-fit: cover;
      object-fit: cover;
