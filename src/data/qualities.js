@@ -3,7 +3,7 @@ const qualities = [
         id:1,
         icon:"fa-solid fa-magnifying-glass",
         titre:"Curieuse",
-        texte:"Enquête de nouveaux savoirs, de nouveaux défis pour progresser"
+        texte:"En quête de nouveaux savoirs, de nouveaux défis pour progresser"
     },
     {
         id:2,

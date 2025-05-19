@@ -72,7 +72,7 @@ const Trainings = () => {
             <div className='skills'>
                 <h3 className='skills-title'>
                     <span>Compétences</span>
-                    <span onClick={()=> setIdTraining(null)} className='skills-title-icon'><i class="fa-solid fa-chevron-up"></i></span>
+                    <span onClick={()=> setIdTraining(null)} className='skills-title-icon'><i className="fa-solid fa-chevron-up"></i></span>
                 </h3>
                 <div className='skills-list'>
                     {filterSkills.map(filterSkill => (

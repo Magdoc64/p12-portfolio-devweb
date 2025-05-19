@@ -8,9 +8,14 @@
   gap: 40px;
   margin-bottom: 40px;
 }
-@media (min-width: 760px) {
+@media (min-width: 760px) and (max-width: 1024px) {
   .list {
     gap: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .list {
+    gap: 200px;
   }
 }
 .list-detail {
@@ -21,6 +26,7 @@
   border-radius: 10px;
   background-color: var(--background-element);
   box-shadow: 3px 5px 4px var(--border-element);
+  transition: all 600ms ease-out;
 }
 .list-detail-title {
   display: flex;
@@ -41,6 +47,9 @@
 }
 .list-detail:hover {
   cursor: pointer;
+  background: linear-gradient(0deg, rgb(188, 151, 240) 0%, rgb(159, 74, 224) 100%);
+  color: white;
+  font-weight: 700;
 }
 
 .skills-title {
