@@ -82,7 +82,19 @@ const Home = () => {
         <h2 className='contact-title'>Me contacter</h2>
         <div className='containerContact'>
           <div className='containerForm'>
-            <Form/>
+            <Modal Content={
+              <div className="modalMessage-success">
+                <div>Message envoyé !</div>
+                <p>Merci pour votre message nous tâcherons de vous répondre dans les plus brefs délais.</p>
+              </div>}
+            >
+              {({ setIsOpened }) => (
+                <Form
+                  onSuccess={() => setIsOpened(true)}
+                  onError={() => null}
+                />
+              )}
+            </Modal>
           </div>
           <div className='contact-details'>
             <div className='contact-details-name'>

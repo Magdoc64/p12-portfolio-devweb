@@ -162,6 +162,9 @@ header {
   justify-content: center;
   margin: 20px 0;
 }
+.showing-icon-link a {
+  color: black;
+}
 
 .aboutme {
   display: flex;
@@ -371,7 +374,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   .contact-details {
@@ -410,6 +413,22 @@ header {
 }
 .contact-details-name i {
   margin-right: 5px;
+}
+
+.modalMessage-success {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.modalMessage-success div {
+  font-size: 18px;
+  font-weight: 700;
+}
+.modalMessage-success p {
+  margin: 10px;
 }
 
 footer {

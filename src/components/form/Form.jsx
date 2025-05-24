@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import '../form/form.css'
 
-const Form = () => {
+const Form = ({onSuccess, onError}) => {
     const apiKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -23,11 +23,10 @@ const Form = () => {
         emailjs.send(serviceId,templateId, formCurrent, apiKey)
         .then(
             () => {
-                alert("Votre message a bien été envoyé - Nous vous répondrons dans les plus brefs délais")
-                console.log('success');
+                onSuccess()
         })
         .catch((error) => {
-                console.error('Failed',error);
+                onError(error)
         })
 
         form.current.reset()

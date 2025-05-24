@@ -148,6 +148,10 @@ header{
         gap:10px;
         justify-content: center;
         margin: 20px 0;
+        & a{
+            color:black;
+        }
+        
     }
 }
 .aboutme{
@@ -349,7 +353,7 @@ header{
         align-items: center;
         justify-content: flex-end;
         gap:40px;
-        margin: 0 15px;
+        margin: 0 10px;
 
         @media(min-width:760px) and (max-width:1024px){
             flex-direction: column-reverse;
@@ -384,6 +388,22 @@ header{
                 margin-right: 5px;
             }
         }
+    }
+}
+.modalMessage-success{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px auto;
+
+    & div{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    & p{
+        margin:10px;
     }
 }
 footer{
