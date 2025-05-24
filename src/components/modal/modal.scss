@@ -1,17 +1,20 @@
 .modal{
     position: fixed;
-    width: 95%;
-    top: 20%;
-    left: 10px;
+    width: 80%;
+    top: 10%;
+    left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    border: 1px solid var(--border-element);
-    border-radius: 15px;
 
-    @media(min-width:760px){
-        top:10%
+    @media(min-width:760px) and (max-width:1024px){
+        width: 70%;
+        left:15%;
+    }
+    @media(min-width:1024px){
+        width: 50%;
+        left:25%;
     }
     &-content{
         position: relative;
@@ -20,9 +23,10 @@
         width: 100%;
         min-height: 100px;
         border-radius: 7px;
+        border: 1px solid var(--border-element);
 
         @media(min-width:1024px){
-            width:50%;
+            width:100%;
         }
     }
 

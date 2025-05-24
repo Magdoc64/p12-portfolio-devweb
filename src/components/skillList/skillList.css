@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px;
+}
+.card-name {
+  font-weight: 700;
+  margin: 10px auto;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.card-list-title {
+  justify-content: flex-start;
+}
+.card-list-rating {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=skillList.css.map */

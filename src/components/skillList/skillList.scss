@@ -1,0 +1,26 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+   
+    &-name{
+        font-weight: 700;
+        margin:10px auto;
+
+    }
+    &-list{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        width:90%;
+        margin:0 auto;
+
+        &-title{
+            justify-content: flex-start;
+        }
+        &-rating{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

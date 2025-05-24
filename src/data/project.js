@@ -61,16 +61,6 @@ const projects = [
         id:6,
         idCategory:1,
         category:"UX/UI designer",
-        name:"Amélioration d'une FAQ",
-        technic:["Tests utilisateurs","Conception interface"],
-        description:"Analyse d'une foire aux questions, réalisation de tests utilisateurs et proposition d'interface en vue d'améliorer l'outil",
-        sourceImage:FAQ,
-        link:""
-    },
-    {
-        id:7,
-        idCategory:1,
-        category:"UX/UI designer",
         name:"Refonte d'un site",
         technic:["Tests utilisateurs","Maquettage","Spécifications"],
         description:"En vue de la refonte d'un site pour un cabinet d'ergonomie, analyse de l'existant, tests utilisateurs et maquettage de la proposition du nouveau site. En finalité, élaboration d'un cahier des charges à destination du webmaster",

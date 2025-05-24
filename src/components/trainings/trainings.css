@@ -1,12 +1,14 @@
 .containerList {
+  width: 100%;
   margin: 30px 0;
 }
 
 .list {
+  width: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
 }
 @media (min-width: 760px) and (max-width: 1024px) {
   .list {
@@ -15,7 +17,7 @@
 }
 @media (min-width: 1024px) {
   .list {
-    gap: 200px;
+    gap: 150px;
   }
 }
 .list-detail {
@@ -30,6 +32,8 @@
 }
 .list-detail-title {
   display: flex;
+  padding: 5px;
+  font-size: 18px;
 }
 .list-detail-icon {
   display: flex;
@@ -71,24 +75,14 @@
 .skills-list {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
   margin: 10px auto;
 }
 @media (min-width: 760px) {
   .skills-list {
-    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
   }
-}
-.skills-list-card {
-  display: flex;
-  flex-direction: column;
-  margin: 5px 5px;
-  align-items: center;
-}
-.skills-list-card-name {
-  font-weight: 700;
-}
-.skills-list-card-rating {
-  display: flex;
-  align-items: center;
 }/*# sourceMappingURL=trainings.css.map */

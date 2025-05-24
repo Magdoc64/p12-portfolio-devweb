@@ -1,0 +1,96 @@
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    
+    & input {
+        height: 25px;
+        border-radius: 5px;
+        border-color: inherit;
+        background-color: var(--background-element);
+        border-style: inherit;
+        box-shadow: 3px 3px 2px var(--border-element);
+    }
+    & label{
+        margin-bottom: 5px;
+    }
+    &-name{
+        display: flex;
+        justify-content: space-between;
+
+        &-lastname{
+            display: flex;
+            flex-direction: column;
+            color: #50018a;
+            font-weight: 700;
+        }
+        &-firstname{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &-contact{
+        display: flex;
+        justify-content: space-between;
+
+        &-email{
+            display: flex;
+            flex-direction: column;
+            color: #50018a;
+            font-weight: 700;
+        }
+        &-tel{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &-objet{
+        display: flex;
+        flex-direction: column;
+        color: #50018a;
+        font-weight: 700;
+    }
+    &-message{
+        display: flex;
+        flex-direction: column;
+        color: #50018a;
+        font-weight: 700;
+
+        & textarea{
+            background-color: var(--background-element);
+            box-shadow: 3px 3px 2px var(--border-element);
+            height: 50px;
+            border-radius: 5px;
+            border-style: inherit;
+        } 
+    }
+    &-info{
+        font-size: 12px;
+        color: #50018a;
+        font-weight: 700;
+    }
+    &-choice{
+        display: flex;
+        color: #50018a;
+        font-weight: 700;
+        margin-top: 20px;
+        & input{
+            box-shadow: none;
+            margin: 0 5px;
+        }
+        
+    }
+    &-button{
+        width: 70%;
+        margin:20px auto;
+        background: linear-gradient(0deg,rgba(188, 151, 240, 1) 0%, rgba(160, 53, 242, 1) 100%);
+        box-shadow: 3px 3px 2px var(--border-element);
+        border-style: inherit;
+        padding: 5px;
+        color: white;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

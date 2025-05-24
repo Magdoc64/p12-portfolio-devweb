@@ -10,11 +10,11 @@ import Trainings from '../components/trainings/Trainings.jsx'
 import Projects from '../components/projects/Projects.jsx'
 import Modal from '../components/modal/Modal.jsx'
 import ModalProject from '../components/modalProject/ModalProject.jsx'
+import Form from '../components/form/Form.jsx'
 import { useState } from 'react'
 
 const Home = () => {
   const [type, setType] = useState(null)
-
   const filteredProject = !type? projects : projects.filter(project => project.idCategory === type) ;
 
   return (
@@ -38,15 +38,17 @@ const Home = () => {
           </div>
         </div>
         <div className='showing-icon-link'>
-          <a href=""><i className='fa-brands fa-linkedin'></i></a>
-          <a href=""><i className='fa-brands fa-github'></i></a>
+          <a href="https://www.linkedin.com/in/magali-civadier-41870164" target='_blank'><i className='fa-brands fa-linkedin'></i></a>
+          <a href="https://github.com/Magdoc64" target='_blank'><i className='fa-brands fa-github'></i></a>
         </div>
       </section>
       <section id='aboutme' className='aboutme'>
         <h2 className='aboutme-title'>Qui suis-je?</h2>
         <div className='aboutme-description'>
           <img src={trombineSalut} alt='Magali en dessin faisant un signe de la main'/>
-          <p className='aboutme-description-text'>Hello, suite à une reconversion professionnelle, je suis devenue développeuse junior frontend en javascript ES6/ReactJs et intégrateur web. </p>
+          <p className='aboutme-description-text'>Hello, <span>développeuse frontend junior JS ES6/React.js</span>, j'aime faire prendre vie à vos projets et vous rendre visible sur la toile au travers du code.<br/>
+          Mon passé d'infirmière m'apporte toute <span>la rigueur, l'organisation, et la planification</span> nécessaire à la conduite de projet, et au développement d'un code performant et facilement maintenable.<br/>
+          Ma formation UX/UI designer me rend particulièrement <span>sensible aux besoins des utilisateurs et à l'ergonomie des interfaces</span> pour qu'elles soient le plus facile d'utilisation. </p>
         </div>
         <div className='aboutme-quality'>
         {qualities.map(quality => (
@@ -80,38 +82,7 @@ const Home = () => {
         <h2 className='contact-title'>Me contacter</h2>
         <div className='containerContact'>
           <div className='containerForm'>
-            <form className='contact-form'>
-              <div className='contact-form-name'>
-                <div className='contact-form-name-lastname'>
-                  <label htmlFor='lastName'>Nom</label>
-                  <input type='text' id='lastName' name='lastName' required/>
-                </div>
-                <div className='contact-form-name-firstname'>
-                  <label htmlFor='firstName'>Prénom</label>
-                  <input type='text' id='firstName' name='firstName'/>
-                </div>
-              </div>
-              <div className='contact-form-contact'>
-                <div className='contact-form-contact-email'>
-                  <label htmlFor='email'>Email</label>
-                  <input type='email' id='email' name='email' required/>
-                </div>
-                <div className='contact-form-contact-tel'>
-                  <label htmlFor='tel'>Téléphone</label>
-                  <input type='tel' id='tel' name='tel'/>
-                </div>
-              </div>
-              <div className='contact-form-objet'>
-                <label htmlFor='object'>Objet</label>
-                <input type='text' id='object' name='object'/>
-              </div>
-              <div className='contact-form-message'>
-                <label htmlFor='message'>Message</label>
-                <textarea id='message' name='message'></textarea>
-              </div>
-              <p className='contact-form-info'>Champs obligatoires</p>
-            </form>
-            <button className='contact-button'>Envoyer</button>
+            <Form/>
           </div>
           <div className='contact-details'>
             <div className='contact-details-name'>
