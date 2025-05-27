@@ -38,8 +38,8 @@ const Home = () => {
           </div>
         </div>
         <div className='showing-icon-link'>
-          <a href="https://www.linkedin.com/in/magali-civadier-41870164" target='_blank'><i className='fa-brands fa-linkedin'></i></a>
-          <a href="https://github.com/Magdoc64" target='_blank'><i className='fa-brands fa-github'></i></a>
+          <a href="https://www.linkedin.com/in/magali-civadier-41870164" aria-label="lien vers le compte linkedin" target='_blank'><i className='fa-brands fa-linkedin'></i></a>
+          <a href="https://github.com/Magdoc64" aria-label="lien vers le compte github" target='_blank'><i className='fa-brands fa-github'></i></a>
         </div>
       </section>
       <section id='aboutme' className='aboutme'>
